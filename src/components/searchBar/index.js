@@ -26,17 +26,8 @@ export function SearchBar({ products }) {
 
 
   const handleChange = e => {
-    var input = document.forms["form1"]["my-form"].value;
-    const x = document.getElementsByClassName("listings");
-    if( input.length === 0) {
-      x.style.display = 'none';
       setSearchField(e.target.value);
-      console.log("entered some text", setSearchField);
-    }
-    else {
-      console.log('the block has been displayed');
-    }
-   
+      console.log("entered some text", setSearchField);   
   };
 
   function searchList() {
