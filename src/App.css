@@ -1,6 +1,6 @@
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .col-1 {
@@ -24,7 +24,8 @@ h3 {
 }
 
 img.small {
-  max-height: 2rem;
+  max-height: auto;
+  max-width: 9rem;
 }
 
 button.add {
@@ -48,11 +49,12 @@ button.remove {
   padding: 20px;
   flex-direction: row;
   right: 0;
-  background: white;
+  background: transparent;
 }
 
 .hide-block {
   display: none;
+  background-color: #fff;
 }
 
 .show-block {
