@@ -63,7 +63,7 @@ export function TopSection(props) {
                     The UK’s most popular online contact lens store 
                 </MotivationalText>
                 <SearchBar  onAdd={onAdd} products={products}/>
-                <Button>Start your Project</Button>
+                <Button>View Our Products</Button>
                 <DownArrowContainer onClick={scrollToNextSection}>
                     <DownArrow/>
                 </DownArrowContainer>   

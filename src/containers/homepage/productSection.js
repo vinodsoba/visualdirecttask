@@ -11,8 +11,6 @@ export function ProductSection(props) {
             <ServicesContainer>
             <SectionTitle>Whats New</SectionTitle>
             </ServicesContainer>
-            
-            
     
             <div className='row col-1'>
                 {products.map((product) => (
