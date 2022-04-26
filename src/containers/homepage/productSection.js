@@ -8,7 +8,7 @@ export function ProductSection(props) {
   console.log(products);
     return ( 
         <div>
-            <ServicesContainer>
+            <ServicesContainer className='mb2'>
             <SectionTitle>Whats New</SectionTitle>
             </ServicesContainer>
     
