@@ -17,12 +17,14 @@ const ServicesContainer = styled(Element)`
 `; 
 
 export function ServicesSection(props) {
-    return <ServicesContainer name="servicesSection">
-        <SectionTitle>How to put in eye drops</SectionTitle>
-        <OurService 
-            title="Step-by-step instructions" 
-            description="Using eye drops, or artificial tears as they're also called, becomes quick and easy once you’ve practised a few times." imgUrl={ Service1Img }>
-        </OurService>
-        <div><Button>Read More</Button></div>
-    </ServicesContainer>
+    return <ServicesContainer name="servicesSection" className='mb2'>
+                <SectionTitle>How to put in eye drops</SectionTitle>
+                    <OurService 
+                        title="Step-by-step instructions" 
+                        description="Using eye drops, or artificial tears as they're also called, becomes quick and easy once you’ve practised a few times." imgUrl={ Service1Img }
+                        >
+                            
+                    </OurService>
+                <div><Button>Read More</Button></div>
+            </ServicesContainer>
 }

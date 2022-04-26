@@ -34,11 +34,11 @@ const Details = styled.p`
 
 export function OurService(props) {
     const { imgUrl, title, description } = props;
-    return <ServiceContainer>
-        <DescriptionContainer>
+    return <ServiceContainer className="service-section-container">
+        <DescriptionContainer className='details-paragraph'>
             <Title>{ title }</Title>
             <Details>{ description }</Details>
         </DescriptionContainer>
-        <ServiceImg src={ imgUrl } />
+        <ServiceImg className="details-img" src={ imgUrl } />
     </ServiceContainer>
 }

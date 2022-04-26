@@ -11,6 +11,11 @@
   flex-grow: 2;
 }
 
+.mb2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .row.center {
   align-items: center;
 }
@@ -71,6 +76,27 @@ input.search-bar {
   width: 100%;
   height: 36px;
   border: none;
+}
+
+@media screen and ( max-width: 767px) {
+  .col-1 {
+    display: block;
+    column-count: 2;
+  }
+
+  .service-section-container {
+    display: block !important;
+    column-count: 1;
+  }
+
+  .details-paragraph {
+    max-width: 100% !important;
+  }
+
+  .details-img {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 
