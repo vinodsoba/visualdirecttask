@@ -97,6 +97,19 @@ input.search-bar {
     width: 100% !important;
     height: 100% !important;
   }
+
+  .search-bar-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  input.search-bar {
+    width: 99%;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
 
 
