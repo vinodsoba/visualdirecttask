@@ -60,3 +60,9 @@ button.remove {
   background-color: #fff;
 }
 
+.product-card-wrapper {
+  display: inline-block;
+}
+
+
+

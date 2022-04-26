@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { Element } from 'react-scroll';
 import { SectionTitle } from '../../components/sectionTitle';
 import { OurService } from '../../components/ourService';
-import Service1Img from './../../Assets/img/web_development.png';
+import Service1Img from './../../Assets/img/eyecare_img1.png';
+import { Button } from '../../components/button';
 
 
 const ServicesContainer = styled(Element)`
@@ -17,11 +18,11 @@ const ServicesContainer = styled(Element)`
 
 export function ServicesSection(props) {
     return <ServicesContainer name="servicesSection">
-        <SectionTitle>Best Quality Software</SectionTitle>
+        <SectionTitle>How to put in eye drops</SectionTitle>
         <OurService 
-            title="Fully integrated services" 
-            description="We build and deliver fully integrated webapps
- with customized control panels that fit your 
-compnay needs" imgUrl={ Service1Img } />
+            title="Step-by-step instructions" 
+            description="Using eye drops, or artificial tears as they're also called, becomes quick and easy once you’ve practised a few times." imgUrl={ Service1Img }>
+        </OurService>
+        <div><Button>Read More</Button></div>
     </ServicesContainer>
 }

@@ -1,11 +1,14 @@
 import React from 'react';
+import { Button } from '../button';
 
 function Card({product}) {
   return(
-    <div className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
-      <div>
+    <div className="product-card-wrapper">
+      <div className='product-card'>
         <h2>{product.name}</h2>
+        <img src={process.env.PUBLIC_URL + product.image} alt={product.name} className="small"></img>
         <p>{product.price}</p>
+        <Button product={product}>Add To Cart</Button>
       </div>
     </div>
   );
