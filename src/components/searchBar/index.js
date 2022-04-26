@@ -42,7 +42,7 @@ export function SearchBar({ products }) {
   return (
     
       <div>
-         <h2 className="f2">Search your Product</h2>
+         <h2 className="f2">Search Our Store</h2>
          <form name="form1">
          <input 
           className="search-bar"
