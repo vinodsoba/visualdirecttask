@@ -1,11 +1,17 @@
 import React, {useState} from 'react';
+import styled from 'styled-components';
 import { SearchList } from './../searchList';
 
-export function SearchBar(props) {
+
+const ProductListing = styled.div`
+  display: flex;
+`;
+
+export function SearchBar({ products }) {
  
   const [searchField, setSearchField] = useState("");
-  const {products, onAdd} = props;
-  const filteredPersons = products.filter(
+  
+  const filteredPersons = products && products.filter(
     product => {
       return (
         product.name
@@ -18,15 +24,25 @@ export function SearchBar(props) {
     }
   );
 
+
   const handleChange = e => {
-    setSearchField(e.target.value);
-    console.log("entered some text", setSearchField);
+    var input = document.forms["form1"]["my-form"].value;
+    const x = document.getElementsByClassName("listings");
+    if( input.length === 0) {
+      x.style.display = 'none';
+      setSearchField(e.target.value);
+      console.log("entered some text", setSearchField);
+    }
+    else {
+      console.log('the block has been displayed');
+    }
+   
   };
 
   function searchList() {
     return (
       <div>
-        <SearchList filteredPersons={filteredPersons} products={products} onAdd={onAdd}/>
+        <SearchList filteredPersons={filteredPersons} />
       </div>
     );
   }
@@ -36,16 +52,25 @@ export function SearchBar(props) {
     
       <div>
          <h2 className="f2">Search your Product</h2>
+         <form name="form1">
          <input 
           className="search-bar"
+          name="my-form"
           type = "search" 
           placeholder = "Search Product" 
           onChange = {handleChange}
-        />
-          {searchList()}
+        /></form>
+
+        <div className='listings'>
+          <ProductListing>
+         
+          </ProductListing>
+          </div>
       </div>   
+      
+      
    
-  );
+  )
   
 }
 

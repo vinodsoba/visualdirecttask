@@ -35,7 +35,7 @@ const TopContainer = styled.div`
 const BackgoundFilter = styled.div`
     width: 100%;
     height: 100%;
-    background-color: rgba(53, 53, 53, 0.88);
+    background-color: rgb(53 53 53 / 20%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,10 +59,10 @@ export function TopSection(props) {
            <BackgoundFilter>
                <Navbar />
                 <Logo></Logo>
-                <SearchBar  onAdd={onAdd} products={products}/>
                 <MotivationalText>
-                    Software Development <br/> From the Best in the Industry 
+                    The UK’s most popular online contact lens store 
                 </MotivationalText>
+                <SearchBar  onAdd={onAdd} products={products}/>
                 <Button>Start your Project</Button>
                 <DownArrowContainer onClick={scrollToNextSection}>
                     <DownArrow/>
