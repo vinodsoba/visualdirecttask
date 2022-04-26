@@ -14,7 +14,7 @@ const ButtonWrapper = styled.button `
     margin-top: 20px;
 
     &:hover {
-        background-color: transparent;
+        background-color: ${theme.primary};
         border: 2px solid ${theme.primary};
     }
 `;

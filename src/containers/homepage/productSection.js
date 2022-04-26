@@ -1,5 +1,6 @@
 import React from 'react';
 import { Product } from '../../components/product';
+import { SectionTitle, ServicesContainer } from '../../components/sectionTitle';
 
 
 export function ProductSection(props) {
@@ -7,7 +8,12 @@ export function ProductSection(props) {
   console.log(products);
     return ( 
         <div>
-            <h1>Products Will show here</h1>
+            <ServicesContainer>
+            <SectionTitle>Whats New</SectionTitle>
+            </ServicesContainer>
+            
+            
+    
             <div className='row col-1'>
                 {products.map((product) => (
                 <Product key={product.id} product={product} onAdd={onAdd}></Product>

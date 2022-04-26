@@ -6,6 +6,8 @@ import { ServicesSection } from './servicesSection';
 
 import data from './../../data';
 import { Basket } from '../../components/basket';
+import { ProductSection } from './productSection';
+
 
 
 
@@ -49,7 +51,8 @@ const onRemove = (product) => {
 console.log(products);
     return ( 
         <PageContainer>
-             <TopSection products={products} onAdd={onAdd} />         
+             <TopSection products={products} onAdd={onAdd} /> 
+             <ProductSection products={products} onAdd={onAdd}/>        
              <ServicesSection />
              <Basket 
              onAdd={onAdd} 
