@@ -41,7 +41,7 @@ export function SearchBar({ products }) {
 
   return (
     
-      <div>
+      <div className="search-bar-container">
          <h2 className="f2">Search Our Store</h2>
          <form name="form1">
          <input 
