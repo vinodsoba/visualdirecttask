@@ -66,5 +66,9 @@ button.remove {
   display: inline-block;
 }
 
+input.search-bar {
+  margin: 0 auto;
+}
+
 
 
